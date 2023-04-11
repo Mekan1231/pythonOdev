@@ -36,24 +36,23 @@ def printer():
 printer()
 ```
 
-#Pytest ile kullanılan decoratorlar
+# Pytest ile kullanılan decoratorlar
+## pytest'te kullanılan decorator'ların tam listesi ve açıklamaları şunlardır:
 
- pytest'te kullanılan decorator'ların tam listesi ve açıklamaları şunlardır:
+__@pytest.fixture:__ Test işlevleri tarafından kullanılacak test verilerini veya hazırlık/kaynakları sağlayan bir fonksiyonu işaretlemek için kullanılır. Bu decorator, test fonksiyonunun argüman listesine eklenen bir parametrenin değerini döndürür.
 
-@pytest.fixture: Test işlevleri tarafından kullanılacak test verilerini veya hazırlık/kaynakları sağlayan bir fonksiyonu işaretlemek için kullanılır. Bu decorator, test fonksiyonunun argüman listesine eklenen bir parametrenin değerini döndürür.
+__@pytest.mark.parametrize:__ Test fonksiyonlarının birden fazla kez çağrılmasını sağlamak için kullanılır. Bu decorator, test fonksiyonunun birden fazla kez çalıştırılmasına izin veren bir parametre listesi sağlar.
 
-@pytest.mark.parametrize: Test fonksiyonlarının birden fazla kez çağrılmasını sağlamak için kullanılır. Bu decorator, test fonksiyonunun birden fazla kez çalıştırılmasına izin veren bir parametre listesi sağlar.
+__@pytest.mark.skip:__ Bir test işlevinin geçici olarak atlanmasını sağlamak için kullanılır.
 
-@pytest.mark.skip: Bir test işlevinin geçici olarak atlanmasını sağlamak için kullanılır.
+__@pytest.mark.xfail:__ Bir testin bilinen bir şekilde başarısız olacağını işaretlemek için kullanılır. Bu, testin hala çalışmasına ve çıktıda görünmesine neden olur, ancak başarısız olarak işaretlenir.
 
-@pytest.mark.xfail: Bir testin bilinen bir şekilde başarısız olacağını işaretlemek için kullanılır. Bu, testin hala çalışmasına ve çıktıda görünmesine neden olur, ancak başarısız olarak işaretlenir.
+__@pytest.mark.skipif:__ Bir test işlevinin belirli bir koşulu karşılamadığı durumlarda atlanmasını sağlamak için kullanılır.
 
-@pytest.mark.skipif: Bir test işlevinin belirli bir koşulu karşılamadığı durumlarda atlanmasını sağlamak için kullanılır.
+__@pytest.mark.timeout:__ Bir test işlevinin belirli bir sürede tamamlanması gerektiğini işaretlemek için kullanılır.
 
-@pytest.mark.timeout: Bir test işlevinin belirli bir sürede tamamlanması gerektiğini işaretlemek için kullanılır.
+__@pytest.mark.order:__ Test işlevlerinin çalışma sırasını belirlemek için kullanılır.
 
-@pytest.mark.order: Test işlevlerinin çalışma sırasını belirlemek için kullanılır.
+__@pytest.mark.dependency:__ Testler arasında bağımlılık oluşturmak için kullanılır.
 
-@pytest.mark.dependency: Testler arasında bağımlılık oluşturmak için kullanılır.
-
-@pytest.mark.usefixtures: Bir test fonksiyonunun önceden belirlenmiş bir hazırlık işlevi kullanmasını sağlamak için kullanılır.
+__@pytest.mark.usefixtures:__ Bir test fonksiyonunun önceden belirlenmiş bir hazırlık işlevi kullanmasını sağlamak için kullanılır.
