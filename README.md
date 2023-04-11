@@ -1,8 +1,8 @@
-#Python decorators
+# Python decorators
 Decorator benºm anladığım kadarıyla c# dilindeki attuributelere benziyor. Pythonda herşey
 nesne olarak görüldüği için bir fonksiyon başka bir fonksiyonu parametre olrak alabilir.
 tabi bu özelliği decorator kullanmada kullanabiliriz
-##Decorator kullanmadan
+## Decorator kullanmadan
 ```python
 def printer():
     print("hello world")
@@ -20,7 +20,7 @@ result= display_info(printer)
 result()
 ```
 
-##Decorator kullanımı
+## Decorator kullanımı
 ```python
 def display_info(func):
     def inner():
