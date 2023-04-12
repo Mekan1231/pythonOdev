@@ -56,3 +56,6 @@ __@pytest.mark.order:__ Test işlevlerinin çalışma sırasını belirlemek iç
 __@pytest.mark.dependency:__ Testler arasında bağımlılık oluşturmak için kullanılır.
 
 __@pytest.mark.usefixtures:__ Bir test fonksiyonunun önceden belirlenmiş bir hazırlık işlevi kullanmasını sağlamak için kullanılır.
+
+# Test ekranı
+![test ekranı](testpassed.png)
